@@ -28,10 +28,10 @@ Pressing the "Reset" button will reset the slider value to 50, and the "Close" b
 
 Once you have the script and UI file in your chosen directory, you can run the script by opening Maya and running the following command in the Python console:
 ```
-import tweenerUI
 import importlib
+import tweener
 
-tweenerUI.TweenWindow().show()
+importlib.reload(tweener)
 ```
 
 * The UI window will appear. Select the object and attributes you want to tween, and adjust the tween amount using the slider.
